@@ -7,6 +7,10 @@ import Nav from "./Nav";
 
 export default class DataArea extends Component {
 
+    handleSort: heading => {
+        
+    }
+
 
 
 
