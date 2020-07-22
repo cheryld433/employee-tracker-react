@@ -16,3 +16,5 @@ function SearchBox({handleSearchChange}) {
 }
 
 export default SearchBox;
+
+// Look on bootstrap for a nice search button
