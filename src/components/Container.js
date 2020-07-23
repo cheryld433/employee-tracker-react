@@ -21,14 +21,20 @@ class Container extends Component {
     }
     // names in ascending and descending order:
     //  sortByName = () => {
+
     
     // handleInputChange = event => {
 
+
+
     //API call triggered at opening and refresh:
+
+
    
 
     //when button search it's clicked:
 
+    
 
 
     render() {
