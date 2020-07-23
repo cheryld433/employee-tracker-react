@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/style.css";
+import "./style.css";
 
 function SearchBox(props) {
     return(
@@ -11,7 +11,7 @@ function SearchBox(props) {
                     </div>
                 </div>
                 <div className="col s6">
-                    <div className="col s6 inputButton right-align">
+                    <div className="col s6 inputAndButton left-align">
                         <input
                         onChange={props.handleInputChange}
                         value={props.value}

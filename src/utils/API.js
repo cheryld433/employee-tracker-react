@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default  {
-    getUserInfo: function(){
+    getUsersInfo: function(){
         return axios.get("http://randomuser.me/api/?results=150&nat=us");
     
     }
