@@ -55,10 +55,13 @@ class Container extends Component {
     }
 
     //API call triggered at opening and refresh:
-   
+    employeeSearch = () => {
+        API.getUsersInfo()
+        .then(res => this.setState({
 
-
-   
+        }))
+        .catch(err => console.log( err ))
+    }
 
     //when button search it's clicked:
 
