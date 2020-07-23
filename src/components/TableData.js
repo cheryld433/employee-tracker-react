@@ -5,7 +5,7 @@ import "../components/style.css";
 
 function TableData(props) {
     return (
-        <table ClassName="tableEmployee">
+        <table className="tableEmployee">
             <thead>
                 <tr>
                     {/* remains empty as placeholder */}
