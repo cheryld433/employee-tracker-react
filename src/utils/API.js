@@ -1,11 +1,11 @@
 import axios from "axios";
-
-export default  {
-    getUsersInfo: function(){
-        return axios.get("http://randomuser.me/api/?results=150&nat=us");
+export default {
     
+    getUsersInfo: function () {
+        return axios.get("https://randomuser.me/api/?results=150&nat=us");
     }
 };
+
 // API call for random employees 
 // Image name phone email DOB
 
