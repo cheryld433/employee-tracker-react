@@ -1,0 +1,34 @@
+body {
+    background-color: #F4F3EA;
+}
+table {
+    margin-top: 20px;
+}
+
+th{
+    font-size:16px;
+    letter-spacing: 1px;
+    font-family: "Inria Sans", serif;
+    color: #a5a1a1;
+    cursor: pointer;
+}
+
+header {
+    padding: 15px;
+    background-color: #F4F3EA;
+    margin-top: 20px;
+}
+
+.inputButton {
+    margin-top: 40px;
+}
+
+.SearchBtn {
+    margin-top: 40px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    background-color: #333d51;
+    background-image: linear-gradient(315deg, #333d51 0%, #12100e 74%);
+}
