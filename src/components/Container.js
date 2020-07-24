@@ -64,10 +64,18 @@ class Container extends Component {
     }
 
     //when button search it's clicked:
+    handleSearch = event => {
+        event.preventDefault();
+        if( !this.state.search) {
+            alert("Please enter a name!")
+        }
+        const { employees, search } = this.state;
+        const filteredEmployees = employees.filter(employee => employee.name.first.toLowerCase().includes(search.toLowerCase()))
 
-    
-
-
+        this.state({
+            filteredEmployees
+        });
+    }
     render() {
 
         return (
