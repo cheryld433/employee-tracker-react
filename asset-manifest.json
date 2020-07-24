@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/employee-tracker-react/static/css/main.f0dc7769.chunk.css",
-    "main.js": "/employee-tracker-react/static/js/main.5c929b48.chunk.js",
-    "main.js.map": "/employee-tracker-react/static/js/main.5c929b48.chunk.js.map",
-    "runtime-main.js": "/employee-tracker-react/static/js/runtime-main.96b73a3e.js",
-    "runtime-main.js.map": "/employee-tracker-react/static/js/runtime-main.96b73a3e.js.map",
-    "static/js/2.c0131e85.chunk.js": "/employee-tracker-react/static/js/2.c0131e85.chunk.js",
-    "static/js/2.c0131e85.chunk.js.map": "/employee-tracker-react/static/js/2.c0131e85.chunk.js.map",
-    "index.html": "/employee-tracker-react/index.html",
-    "precache-manifest.45579910cad9e7d45bb214f8168591e8.js": "/employee-tracker-react/precache-manifest.45579910cad9e7d45bb214f8168591e8.js",
-    "service-worker.js": "/employee-tracker-react/service-worker.js",
-    "static/css/main.f0dc7769.chunk.css.map": "/employee-tracker-react/static/css/main.f0dc7769.chunk.css.map",
-    "static/js/2.c0131e85.chunk.js.LICENSE.txt": "/employee-tracker-react/static/js/2.c0131e85.chunk.js.LICENSE.txt"
+    "main.css": "/cheryld433/employee-tracker-react.git/static/css/main.f0dc7769.chunk.css",
+    "main.js": "/cheryld433/employee-tracker-react.git/static/js/main.5c929b48.chunk.js",
+    "main.js.map": "/cheryld433/employee-tracker-react.git/static/js/main.5c929b48.chunk.js.map",
+    "runtime-main.js": "/cheryld433/employee-tracker-react.git/static/js/runtime-main.c56d0663.js",
+    "runtime-main.js.map": "/cheryld433/employee-tracker-react.git/static/js/runtime-main.c56d0663.js.map",
+    "static/js/2.c0131e85.chunk.js": "/cheryld433/employee-tracker-react.git/static/js/2.c0131e85.chunk.js",
+    "static/js/2.c0131e85.chunk.js.map": "/cheryld433/employee-tracker-react.git/static/js/2.c0131e85.chunk.js.map",
+    "index.html": "/cheryld433/employee-tracker-react.git/index.html",
+    "precache-manifest.625d4cd3b739372fbfcfe82093ba3420.js": "/cheryld433/employee-tracker-react.git/precache-manifest.625d4cd3b739372fbfcfe82093ba3420.js",
+    "service-worker.js": "/cheryld433/employee-tracker-react.git/service-worker.js",
+    "static/css/main.f0dc7769.chunk.css.map": "/cheryld433/employee-tracker-react.git/static/css/main.f0dc7769.chunk.css.map",
+    "static/js/2.c0131e85.chunk.js.LICENSE.txt": "/cheryld433/employee-tracker-react.git/static/js/2.c0131e85.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.96b73a3e.js",
+    "static/js/runtime-main.c56d0663.js",
     "static/js/2.c0131e85.chunk.js",
     "static/css/main.f0dc7769.chunk.css",
     "static/js/main.5c929b48.chunk.js"
