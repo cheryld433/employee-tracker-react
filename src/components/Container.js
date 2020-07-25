@@ -19,79 +19,83 @@ class Container extends Component {
             filteredEmployees: res.data.results
         })).catch(err => console.log(err))
     }
-    // names in ascending and descending order:
-    sortByName = () => {
-        const filtered = this.state.filteredEmployees;
-        console.log(filtered)
-        if(this.state.order === "ascend") {
-            const sorted = filtered.sort((a, b) => (a.name.first > b.name.first) ? -1 : 1)
-            console.log(sorted)
 
-            this.setState({ 
-                filteredEmployees: sorted,
+//   names in ascending and descending order:
+    sortByName = () => {
+        const filtereds = this.state.filteredEmployees;
+        if (this.state.order === "ascend") {
+            const sorteds = filtereds.sort((a, b) => (a.name.first > b.name.first) ? 1 : -1)
+            console.log(sorteds)
+
+            this.setState({
+                filteredEmployees: sorteds,
                 order: "descend"
             })
         } else {
-            const sorted = filtered.sort((a, b) => (a.name.first > b.name.first) ? -1 : 1)
-            console.log(sorted)
+
+            const sorteds = filtereds.sort((a, b) => (a.name.first > b.name.first) ? -1 : 1)
+            console.log(sorteds)
 
             this.setState({
-                filteredEmployees: sorted,
+                filteredEmployees: sorteds,
                 order: "ascend"
             })
         }
-
-
     }
-
+    
     handleInputChange = event => {
+
         const employees = this.state.employees;
-        const userInput = event.target.value;
-        const filteredEmployees = employees.filter(employee => employee.name.first.toLowerCase().indexOf(userInput.toLowerCase()) > -1)
-         
-        this.setState({ 
+        const UserInput = event.target.value;
+        const filteredEmployees = employees.filter(employee => employee.name.first.toLowerCase().indexOf(UserInput.toLowerCase()) > -1)
+        
+        this.setState({
             filteredEmployees,
         });
-    }
+    };
 
-    //API call triggered at opening and refresh:
+    // API call triggered at opening and refresh:
     employeeSearch = () => {
-        API.getUsersInfo()
-        .then(res => this.setState({
+        API.getUsers()
+            .then(res => this.setState({
 
-        }))
-        .catch(err => console.log( err ))
+                filteredEmployees: res.data.results,
+                employees: res.data.results
+            }))
+            .catch(err => console.log(err))
     }
 
-    //when button search it's clicked:
+    // when button search it's clicked:
     handleSearch = event => {
         event.preventDefault();
-        if( !this.state.search) {
-            alert("Please enter a name!")
+        if (!this.state.search) {
+            alert("Enter a name")
         }
         const { employees, search } = this.state;
-        const filteredEmployees = employees.filter(employee => employee.name.first.toLowerCase().includes(search.toLowerCase()))
+        const filteredEmployees = employees.filter(employee => employee.name.first.toLowerCase().includes(search.toLowerCase()));
 
-        this.state({
+        this.setState({
             filteredEmployees
         });
     }
-    render() {
 
-        return (
-            <div>
+render() {
 
-                <SearchBox
-                    employee={this.state.employees}
-                    handleSearch={this.handleSearch}
-                    handleInputChange={this.handleInputChange} />
-                <TableData results={this.state.filteredEmployees}
-                    sortByName={this.sortByName}
+    return (
+        <div>
 
-                />
-            </div >
-        )
-    }
+            <SearchBox
+                employee={this.state.employees}
+                handleSearch={this.handleSearch}
+                handleInputChange={this.handleInputChange} />
+            <TableData results={this.state.filteredEmployees}
+                sortByName={this.sortByName}
+
+            />
+        </div >
+    )
 }
+}
+
 
 export default Container;

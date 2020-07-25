@@ -7,7 +7,7 @@ function SearchBox(props) {
             <header className="z-depth-5 col s12" >
                 <div className="row">
                     <div className="col s6">
-                        <h3 className="left-align headerText">Associate Directory</h3>
+                        <h3 className="left-align headerText">Employee Directory</h3>
                     </div>
                     <div className="col s6 ">
                         <div className="col s6 inputAndButton right-align ">
