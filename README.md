@@ -15,11 +15,6 @@ In this assignment I created an employee directory with React. The requirements 
 
   * [Contributors](#contributors)
 
-  * [Tests](#tests)
-
-  * [Questions](#questions)
-
-
 ## Installation:
 npm install, npm start
 
