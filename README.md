@@ -25,7 +25,7 @@ npm install, npm start
 
 ## Usage:
 Live: https://cheryld433.github.io/employee-tracker-react/
-![](demo.gif)
+![](./public/demo.gif)
 
 ## Contributors:
 Cheryl Daniels
